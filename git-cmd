@@ -1,0 +1,38 @@
+get a github persoan access token: AHA-LT-BOMER : 9f5482eb7475c9145bee9da896efb4215cc6e5f0
+
+
+Set a Git username:
+git config --global user.name "bigb2014"
+git config --global user.email "berevan.omer@gmail.com"
+
+Change the current working directory to your local project.
+
+Initialize the local directory as a Git repository.
+
+git init
+Add the files in your new local repository. This stages them for the first commit.
+
+git add .
+# Adds the files in the local repository and stages them for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
+
+Commit the files that you've staged in your local repository.
+touch README.md
+
+git commit -m "First commit"
+# Commits the tracked changes and prepares them to be pushed to a remote repository. To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
+
+At the top of your GitHub repository's Quick Setup page, click  to copy the remote repository URL.
+
+# Sets the new remote
+git remote add origin git@github.com:bigb2014/learning.git
+git remote add origin https://github.com/bigb2014/learning.git
+# create remote on github
+curl -u bigb2014:9f5482eb7475c9145bee9da896efb4215cc6e5f0 https://api.github.com/user/repos -d '{"name":"learning"}' #this will create the repo in github.
+
+
+##git remote remove origin
+#Verifies the new remote URL
+##git remote -v
+
+## push new items to git
+git push remote origin

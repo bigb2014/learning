@@ -1,0 +1,4 @@
+sample3: this is the sample3 line 1
+sample3: this is the sample3 line 2
+sample3: this is the sample3 line 3
+sample3: this is the sample3 line 4

@@ -35,4 +35,5 @@ curl -u bigb2014:9f5482eb7475c9145bee9da896efb4215cc6e5f0 https://api.github.com
 ##git remote -v
 
 ## push new items to git
-git push remote origin
+#git push remote origin
+git push -u origin master
